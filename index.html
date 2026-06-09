@@ -153,11 +153,11 @@ canvas{width:304px;height:304px;display:block;border-radius:50%;filter:drop-shad
     <div class="title">Partagez votre<br>expérience ⭐</div>
     <div class="card">
       <div class="step"><div class="num">1</div><p>Cliquez sur le bouton pour laisser votre avis Google.</p></div>
-      <div class="step"><div class="num">2</div><p>Revenez ensuite ici avec le bouton retour de votre téléphone.</p></div>
+      <div class="step"><div class="num">2</div><p>Revenez ensuite ici : la roue s’ouvrira automatiquement.</p></div>
       <div class="step"><div class="num">3</div><p>La roue sera débloquée pour découvrir votre cadeau.</p></div>
     </div>
     <a class="btn btn-orange" target="_blank" href="https://g.page/r/CYrvLSsnd1LXEBM/review" onclick="reviewClicked()">⭐ Laisser mon avis Google</a>
-    <button class="btn btn-soft" id="unlockBtn" onclick="goWheel()">J'ai laissé mon avis, jouer →</button>
+    <button class="btn btn-soft" id="unlockBtn" onclick="goWheel()">🎡 Accéder à la roue</button>
   </section>
 
   <section class="screen center" id="wheel">
@@ -221,7 +221,7 @@ function satisfied(ok){
 
 function reviewClicked(){
   localStorage.setItem("bioMinceReviewClicked","1");
-  setTimeout(()=>{ document.getElementById("unlockBtn").textContent="Merci, accéder à la roue →"; }, 600);
+  setTimeout(()=>{ document.getElementById("unlockBtn").textContent="🎡 Accéder à la roue"; }, 600);
 }
 
 function goWheel(){ show("wheel"); }
